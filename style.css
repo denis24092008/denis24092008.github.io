@@ -1,0 +1,60 @@
+div {
+    margin: 100px 100px 100px 1000px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: 3s;
+}
+div:hover{
+    /* background-color: blueviolet; */
+    /* transform: translate(1111px ,300px); */
+    /* transform: rotate(9turn); */
+    /* transform: scale(5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000%); */
+    /* transform: skewY( 50deg); */
+    /* transform: perspective(1000px) rotateY(18turn); */
+}
+@keyframes go {
+    from {
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(100px,50px);
+        
+    }
+}
+.kek:hover{
+    background-color: blueviolet;
+    /* transform: translate(1111px ,300px); */
+    /* transform: rotate(9turn); */
+    /* transform: scale(5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000%); */
+    /* transform: skewY( 50deg); */
+    /* transform: perspective(1000px) rotate(6turn); */
+}
+.kek {
+    width: 500px;
+    height: 500px;
+    background-image: url(https://www.tradeinn.com/f/13919/139191330/vetus-p4e-rh-%D0%9F%D1%80%D0%BE%D0%BF%D0%B5%D0%BB%D0%BB%D0%B5%D1%80.jpg);
+    background-size:contain ;
+    background-repeat: no-repeat;
+     animation: go3 3s infinite cubic-bezier(0,1.9,0,-1.94); 
+}
+@keyframes go3{
+    0%{
+        transform:translate(0,0) ;
+    }
+    20%{
+        transform:translate(200px,0) rotate(3turn);
+    }
+    40%{
+        transform:translate(200px,-500px) rotate(6turn);
+    }
+    60%{
+        transform:translate(200px,-500px) rotate(3turn);
+    }
+    80%{
+        transform:translate(0,0) rotate(6turn);
+    }
+    100%{
+        transform:translate(0,0) ;
+    }
+}
